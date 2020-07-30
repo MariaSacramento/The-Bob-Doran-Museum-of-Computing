@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>The Bob Doran Museum of Computing</title>
+    <link rel="stylesheet" type="text/css" href="msac070.css">
+    <link href="http://redsox.uoa.auckland.ac.nz/ms/logo-192x192.png">
+    <script src="msac070.js"></script>
+</head>
+
+
+<body>
+    <!---------------    HEADER    ----------------->
+    <header>
+        <div> 
+            <div id="logo">
+               <img src="http://redsox.uoa.auckland.ac.nz/ms/logo.svg"></img>
+            </div>
+
+            <nav>
+                <ul>
+                    <li id=homeTab><a onclick="showHomeTab()">HOME</a></li>
+                    <li id=newsTab><a onclick="getNews()">NEWS</a></li>
+                    <li id=displayTab><a onclick="getDisplay()">DISPLAY</a></li>
+                    <li id=museumTab><a onclick="getMuseumItems()">MUSEUM SHOP</a><li>
+                    <li id=registrationTab><a onclick="getRegistration()">REGISTER NOW</a><li>
+                    <li id=guestbookTab><a onclick="getHTMLComment()">GUEST BOOK</a></li>
+                    <li id=login><a></a></li> <!-- Empty Login Button -->
+                    <li id=logout><a></a></li> <!-- Empty Logout/UserName -->
+                </ul>
+            </nav>
+            
+        </div>
+
+    </header>
+
+
+    <div id="homePage">
+        <div id="home">
+            <h4>THE</h4>
+            <h1>BOB DORAN</h1>
+            <h2>Museum of Computing</h2>
+        </div>
+
+        <div id="about">
+            <h1>About The Museum</h1>
+            <p>Welcome to The Bob Doran Museum of Computing. You can learn more about the displays here. If you are intrigued by what you find here and live close to Auckland, or are visiting the city, please feel free to drop in to the school and see the displays for yourself. We are located at the University on Princes Street and are always open during normal office hours and also in the evenings and on the weekends when classes are in session.</p>
+        </div>
+    </div>
+
+
+
+
+
+<!-- NEWS Div -->
+<div id="news"></div>
+
+<!-- DISPLAY Div -->
+<div id="display" style="display: none">
+    <div id="searchBar"> 
+        <!-- Search bar goes here -->
+        <input type="text" id="displaySearchBar" onkeyup="displaySearchBar()" placeholder="Search...">
+    </div>
+
+    <!-- Display items go here -->
+    <div id="displayItems"></div>
+</div>
+
+<!-- MUSEUM SHOP Div -->
+<div id="museumShop">
+    <div id="museumSearchBar"> 
+        <!-- Search bar goes here -->
+        <input type="text" id="museumShopSearchBar" onkeyup="museumShopSearchBar()" placeholder="Search...">
+    </div>
+
+    <!-- Museum items go here -->
+    <div id="museumItems"></div>
+
+</div>
+
+<!-- REGISTRATION FORM Div -->
+<div id="registration">
+    <form>
+        <div>
+            <h1>Register</h1>
+            <p>Please fill in this form to create an account.</p>
+
+            <label for="name"><b>Enter your name</b></label>
+            <input id="userRegisterName" type="text" placeholder="Name" name="name" required>
+              
+            <label for="password"><b>Enter your password</b></label>
+            <input id= "userRegisterPassword" type="password" placeholder="Enter Password" name="password" required>
+
+            <label for="email"><b>Enter your email</b></label>
+            <input id="userRegisterEmail" type="text" placeholder="Enter Email" name="email">
+              
+
+            
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+            <button type="submit" onclick="getRegistration()">Register</button>
+            </div>
+              
+            <div>
+            <p>Already have an account? <a href="#">Sign in</a>.</p>
+            </div>
+    </form>
+</div>
+
+<!-- GUESTBOOK Div --> <!--change the size to css later-->
+<div id="guestbook" class="guestBookStyle" style="display:none">
+            <h1><span>GUEST</span> FEEDBACK</h1>
+            <h2>We would love to hear your thoughts...</h2>
+        <form>
+                <input name="name" type="text" id="userName" class="guestFormStyle" placeholder="Enter your name..."><br>
+                <textarea name="comment" type="comment" id="userComment" class="guestFormStyle" placeholder="Tell us what you think..." rows="5"></textarea><br>
+                <input type="button" id="showComment" onclick="getHTMLComment()" class="guestFormStyle submit" value="POST COMMENT">
+        </form>
+
+    <iframe name="frame" src="http://redsox.uoa.auckland.ac.nz/ms/MuseumService.svc/htmlcomments"></iframe> <!--style="height:400px;width:300px;"-->
+
+</div>
+
+
+
+<footer id="footer">
+        <p>Maria Sacramento, Copyright &copy; 2019</p>
+</footer> 
+
+</body>
+
+
+
+
+</html>

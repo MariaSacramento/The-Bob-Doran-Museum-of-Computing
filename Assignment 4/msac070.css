@@ -1,0 +1,441 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:15px;
+    padding:0;
+    background-color: #7C8b95;
+}
+
+
+/*Header*/
+header{
+    overflow: hidden;
+    background-color:#ffffff;
+    min-height:70px; /*for adjustable height*/
+    border-bottom:#FEC925 5px solid;
+}
+
+header a{
+    color:#ffffff;
+    text-decoration:none; /*remove underline on text*/
+    text-transform:uppercase;
+    font-size:14px;
+}
+
+header li{
+    display:inline;
+    padding: 8px 11px 8px 11px; /*top right bottom left*/
+}
+
+header #logo{
+    float: left;
+    width: 70px;
+    height: auto;
+    padding:10px;
+}
+
+
+header nav{
+    float:right;
+    margin-top:10px;
+}
+
+#home{
+    min-height:400px;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://images.adsttc.com/media/images/5a8b/a31d/f197/cc6e/0500/0043/large_jpg/Simon_Devitt-AB0914.jpg?1519100695);
+    background-size: cover;
+    background-position: center;
+    text-align:left;
+    color:#ffffff;
+}
+
+#home h1{
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    font-size: 60px;
+}
+
+#home h2{
+    position: absolute;
+    top: 280px;
+    left:53px;
+    font-size: 30px;
+}
+
+#home h4{
+    position: absolute;
+    top: 210px;
+    left:70px;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+
+#about{
+    padding:15px;
+    color:#35424a;
+    background:#ffffff;
+}
+
+
+#about h1{
+    border-bottom: 4px #FEC925 solid;
+}
+
+
+.about p{
+    float:center;
+    text-align:center;
+    padding:10px;
+}
+
+footer{
+    padding:20px;
+    margin-top:20px;
+    color: #ffffff;
+    background-color:#35424a ;
+    text-align:center;
+}
+
+
+/* Links Style*/
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+/* Links Blocking */
+ul li{
+    display: inline-block;   
+}
+
+/* Links style*/
+ul li a{
+    text-decoration: none;
+    color: #6f7c80;
+    padding: 5px 20px;
+    transition: 0.6s ease;
+}
+
+/* Hover over links change color*/
+ul li a:hover{
+    color: #35424a;
+    font-weight: bold;
+}
+
+
+/* News Section */
+.row {
+    overflow: hidden;
+    background-color:#ffffff;
+    min-height:70px; /*for adjustable height*/
+    padding: 50px 50px;
+}
+
+.row h3{
+    font-size: 12px;
+}
+
+/* Display Section */
+.displayContent {
+    overflow: hidden;
+    background-color: #ffffff;
+    min-height:70px;
+    padding: 50px 50px;
+    background-position: center;
+}
+
+
+#searchBar input {
+    height: 50px;
+    width: 400px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    border-radius: 5px 2px;
+    border-color: transparent;
+}
+
+/* GuestBook Section */
+.guestBookStyle{
+    text-align: center;
+    background-image:linear-gradient(to right,rgba(0,0,0,1), rgba(0,0,0,0.8)), url(https://www.rcp.co.nz/wp-content/uploads/2017/02/AB1531.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.guestBookStyle h1{
+    color: #ffffff;
+    font-size: 50px;
+}
+
+span{
+    color: #FEC925;
+}
+
+.guestBookStyle h2{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+
+.guestFormStyle{
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+input{
+    height: 50px;
+}
+
+
+form .submit{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    background: #FEC925;
+    border-color: transparent;
+    color: #ffffff;
+
+}
+
+form .submit:hover{
+    color: #f2f2f2;
+    background-color: #35424a;
+}
+
+iframe{
+    height: 300px;
+    width: 600px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-color: transparent;
+}
+
+/* Buy Button */
+form .submit{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    background: #FEC925;
+    border-color: transparent;
+    color: #ffffff;
+
+}
+
+form .submit:hover{
+    color: #f2f2f2;
+    background-color: #35424a;
+}
+
+
+@media(max-width: 320px){ 
+    header a,
+    header nav,
+    header li{
+        float: none;
+        width: 100%;
+        height: auto;
+        padding:none;
+        font-size: 20px;
+    }
+
+    header #logo{
+        position: relative;
+        width: 80px;
+        height: auto;
+        padding:none;
+        top: 10px;
+        left: 50px;
+    }
+
+    #home h2{
+        position: absolute;
+        top: 450px;
+        left:53px;
+        font-size: 20px;
+    }
+    
+    #home h4{
+        position: absolute;
+        top: 425px;
+        left:65px;
+        font-size: 15px;
+    }
+
+
+    /*display*/    
+    #searchBar input {
+        width: 100px;
+    }
+}
+
+
+@media(max-width: 460px){ 
+    header a,
+    header nav,
+    header li{
+        float: none;
+        width: 100%;
+        height: auto;
+        padding:none;
+        font-size: 20px;
+    }
+
+    header #logo{
+        position: relative;
+        width: 80px;
+        height: auto;
+        padding:none;
+        top: 10px;
+        left: 50px;
+    }
+
+    #home h1{
+        position: absolute;
+        top: 420px;
+        left: 50px;
+        font-size: 45px;
+    }
+
+    #home h2{
+        position: absolute;
+        top: 475px;
+        left:53px;
+        font-size: 20px;
+    }
+    
+    #home h4{
+        position: absolute;
+        top: 430px;
+        left:65px;
+        font-size: 15px;
+    }
+
+    iframe{
+        height: 300px;
+        width: 300px;
+        margin-bottom: 25px;
+        background-color: #ffffff;
+        border-color: transparent;
+    }
+
+    .guestFormStyle{
+        width: 300px;
+        background: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid gray;
+        color: #ffffff;
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+
+    /*display*/    
+    #searchBar input {
+        height: 50px;
+        width: 335px;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 2px;
+        border-radius: 5px 2px;
+        border-color: transparent;
+    }
+
+    /* registration form */
+    
+}
+
+
+/*standard for tablet*/
+@media(max-width: 561px){ 
+    header a,
+    header nav,
+    header li{
+        float: none;
+        width: 100%;
+        height: auto;
+        padding:none;
+        font-size: 20px;
+    }
+
+    header #logo{
+        position: relative;
+        width: 80px;
+        height: auto;
+        padding:none;
+        top: 10px;
+        left: 50px;
+    }
+
+    #home h1{
+        position: absolute;
+        top: 420px;
+        left: 50px;
+        font-size: 45px;
+    }
+
+    #home h2{
+        position: absolute;
+        top: 475px;
+        left:53px;
+        font-size: 20px;
+    }
+    
+    #home h4{
+        position: absolute;
+        top: 430px;
+        left:65px;
+        font-size: 15px;
+    }
+
+    iframe{
+        height: 300px;
+        width: 300px;
+        margin-bottom: 25px;
+        background-color: #ffffff;
+        border-color: transparent;
+    }
+
+    .guestFormStyle{
+        width: 300px;
+        background: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid gray;
+        color: #ffffff;
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+
+    /*display*/    
+    #searchBar input {
+        height: 50px;
+        width: 335px;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 2px;
+        border-radius: 5px 2px;
+        border-color: transparent;
+    }
+
+
+
+
+
+}
